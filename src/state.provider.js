@@ -52,12 +52,12 @@ export const StateProvider = {
   createState(name, state) {
     let newState = states[name] || new State(state);
     states[name] = newState;
-    return store;
+    return newState;
   },
   getState(name) {
-    return state[name];
+    return states[name];
   },
   destroy(name) {
-    state[name] = null;
+    states[name] = null;
   }
 };

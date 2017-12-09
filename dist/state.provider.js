@@ -1,4 +1,14 @@
-define("store.provider", [], function() { return /******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -147,16 +157,17 @@ var StateProvider = exports.StateProvider = {
   createState: function createState(name, state) {
     var newState = states[name] || new State(state);
     states[name] = newState;
-    return store;
+    return newState;
   },
   getState: function getState(name) {
-    return state[name];
+    return states[name];
   },
   destroy: function destroy(name) {
-    state[name] = null;
+    states[name] = null;
   }
 };
 
 /***/ })
-/******/ ])});;
-//# sourceMappingURL=store.provider.js.map
+/******/ ]);
+});
+//# sourceMappingURL=state.provider.js.map

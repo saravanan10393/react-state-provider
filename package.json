@@ -1,8 +1,8 @@
 {
   "name": "react-state-provider",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A simple util that provides a easy way to share state accross react component.",
-  "main": "dist/store.provider.js",
+  "main": "dist/state.provider.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -16,7 +16,7 @@
     "react-state",
     "react-state-provider"
   ],
-  "author": "",
+  "author": "Saravanan Ramupillai",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saravanan10393/react-state-provider/issues"
@@ -27,6 +27,10 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
     "webpack": "^3.10.0"
+  },
+  "jest": {
+    "verbose": true
   }
 }
