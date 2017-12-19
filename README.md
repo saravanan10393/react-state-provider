@@ -10,6 +10,9 @@ Intstall using npm
 ## For Usage see the example below
 [code sample](https://codesandbox.io/s/2z7or6vvx0)
 
+## Here is the Medium blog post:
+https://medium.com/@saravananr_93203/state-management-in-react-without-redux-mobx-9011b714fb9
+
 ## When to use: 
 
 lets say you have react dom tree like this
