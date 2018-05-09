@@ -1,6 +1,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/86000ad0736648dfb9aee88c2aa9ae1f)](https://www.codacy.com/app/saravanan10393/react-state-provider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saravanan10393/react-state-provider&amp;utm_campaign=Badge_Grade)
 
 # react-state-provider
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/86000ad0736648dfb9aee88c2aa9ae1f)](https://www.codacy.com/app/saravanan10393/react-state-provider?utm_source=github.com&utm_medium=referral&utm_content=saravanan10393/react-state-provider&utm_campaign=badger)
+
 A simple util for sharing state accross your react component without using react's context.
 
 Intstall using npm
