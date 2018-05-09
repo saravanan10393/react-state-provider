@@ -16,15 +16,18 @@ https://medium.com/@saravananr_93203/state-management-in-react-without-redux-mob
 ## When to use: 
 
 lets say you have react dom tree like this
-`<Component-A>
+
+```
+<Component-A>
   <Component-B />
   <Component-C />
   <Component-D>
     <Component-E />
   </Component-D>
-</Component-A>`
+</Component-A>
+```
 
-Now "Component-B" have a button that set a name, you want to display that name in "Component-E". 
+Now "Component-B" has a button that sets a name and you want to display that name in "Component-E".
 
 One way to solve it by having shared state in Component-A and pass a callback method to Component-B. Then Component-B will call the callback with name that set a updated value of name in Component-A's state;
 
